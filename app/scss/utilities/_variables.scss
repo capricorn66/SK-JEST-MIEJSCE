@@ -1,0 +1,101 @@
+// Default colors
+
+$white: #FFF;
+$black: #000;
+    $lightblack: #191919;
+$gray-100: #FAFAFA;
+    $gray-200: #E3E3E3;
+    $gray-300: #CCC;
+    $gray-400: #a7a9ac;
+    $gray-500: #959595;
+$gray-600: #696969;
+    $gray-700: #494949;
+    $gray-800: #4E4E4E;
+$gray-900: #3C3C3C;
+
+$body-color: $black;
+
+$alert-red: #ff4200;
+$alert-green: #559f4f;
+$alert-yellow: #ffd300;
+$alert-blue: #0b7bb9;
+
+//primary colors
+
+$app-color-1: #D13239;
+$app-color-2: #007FB5;
+$app-color-3: #F7941D;
+
+$service-colors: () !default;
+$service-colors: map-merge(
+    (
+        "color-1": $app-color-1,
+        "color-2": $app-color-2,
+        "color-3": $app-color-3
+    ),
+    $service-colors
+);
+
+
+
+
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+$spacer: 5px !default;
+$spacers: () !default;
+$spacers: map-merge(
+    (
+        0: 0,
+        1: 1px,
+        2: 2px,
+        3: 3px,
+        4: 4px,
+        5: $spacer,
+        10: ($spacer * 2),
+        15: ($spacer * 3),
+        20: ($spacer * 4),
+        25: ($spacer * 5),
+        30: ($spacer * 6),
+        35: ($spacer * 7),
+        40: ($spacer * 8),
+        45: ($spacer * 9),
+        50: ($spacer * 10),
+        55: ($spacer * 11),
+        60: ($spacer * 12),
+        65: ($spacer * 13),
+        70: ($spacer * 14),
+        75: ($spacer * 15),
+        80: ($spacer * 16),
+        85: ($spacer * 17),
+        90: ($spacer * 18),
+        95: ($spacer * 19),
+        100: ($spacer * 20),
+    ),
+    $spacers
+);
+
+// Grid breakpoints
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1560px
+) !default;
+
+
+// Grid containers
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        xxl: 1480px
+) !default;
+

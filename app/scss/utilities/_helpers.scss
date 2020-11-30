@@ -1,0 +1,89 @@
+/* helpers
+*******************************************************************/
+
+@for $i from 5 through 35 {
+    $j: $i * 2;
+    .font-#{$j} {
+        font-size: #{$j}px !important;
+    }
+}
+
+@each $color, $value in $service-colors {
+    .#{$color} {
+        color: $value !important;
+    }
+    .bg-#{$color} {
+        background-color: $value !important;
+    }
+}
+
+.white {
+    color: $white;
+}
+
+.black {
+    color: $black;
+}
+
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+.bodyLock {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.scroll-h {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: -20px !important;
+    padding-bottom: 20px !important;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    > * {
+        white-space: nowrap;
+    }
+}
+
+
+.row.gutter-xs {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.row.gutter-xs > [class^="col-"],
+.row.gutter-xs > [class^=" col-"] {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.row.gutter-sm {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.row.gutter-sm > [class^="col-"],
+.row.gutter-sm > [class^=" col-"] {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.valign {
+    vertical-align: middle;
+}

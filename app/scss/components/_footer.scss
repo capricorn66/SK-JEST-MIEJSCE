@@ -1,0 +1,26 @@
+/* footer
+*******************************************************************/
+
+footer {
+  padding: 60px 0;
+  font-size: 14px;
+  background-color: $gray-900;
+  color: $white;
+
+  h4 {
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  a {
+    color: $white;
+    font-weight: 600;
+    &:focus,
+    &:hover {
+      color: $gray-100;
+    }
+  }
+}

@@ -1,0 +1,131 @@
+/* buttons
+*******************************************************************/
+
+.btn {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  font-weight: 400;
+  min-height: 48px;
+  font-size: 16px;
+  border-radius: 24px;
+  padding-bottom: .01em;
+  padding-top: 0;
+  transition: background cubic-bezier(0.68, 0, 0.265, 1) .3s, border-color cubic-bezier(0.68, 0, 0.265, 1) .3s, color cubic-bezier(0.68, 0, 0.265, 1) .3s;
+}
+
+.btn-sm {
+  min-height: 32px;
+  font-size: 14px;
+}
+
+.btn-lg {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+  min-height: 74px;
+  border-radius: 37px;
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  i {
+    font-size: 32px;
+    line-height: 0;
+  }
+  @include media-breakpoint-only(md) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    min-height: 60px;
+    font-size: 18px;
+    border-radius: 30px;
+  }
+  @include media-breakpoint-down(sm) {
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+    min-height: 48px;
+    font-size: 16px;
+    border-radius: 24px;
+  }
+}
+
+.btn-link {
+  color: $app-color-1;
+}
+
+.btn-color-1,
+.btn-primary {
+  background-color: $app-color-1;
+  border-color: $app-color-1;
+  color: white !important;
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  &:hover,
+  &:focus {
+    background-color: lighten($app-color-1, 10%);
+    border-color: lighten($app-color-1, 10%);
+    box-shadow: none !important;
+  }
+}
+
+.btn-gray-800 {
+  background-color: $gray-800;
+  border-color: $gray-800;
+  color: white !important;
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  &:hover,
+  &:focus {
+    background-color: lighten($gray-800, 6%);
+    border-color: lighten($gray-800, 6%);
+    box-shadow: none !important;
+  }
+}
+
+.btn-gray-600 {
+  background-color: $gray-600;
+  border-color: $gray-600;
+  color: white;
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  &:hover,
+  &:focus {
+    background-color: $gray-100;
+    color: $gray-600;
+    box-shadow: none !important;
+  }
+}
+
+.btn-outline-gray-600 {
+  background-color: $gray-100;
+  border-color: $gray-600;
+  color: $gray-600;
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  &:hover,
+  &:focus {
+    background-color: $gray-600;
+    color: $white;
+    box-shadow: none !important;
+  }
+}
+
+.btn-outline-primary {
+  border-color: $body-color;
+  color: $body-color;
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  &:hover,
+  &:focus {
+    background-color: darken($app-color-1, 6%);
+    border-color: darken($app-color-1, 6%);
+    box-shadow: none !important;
+  }
+}

@@ -1,0 +1,14 @@
+/* swiper
+*******************************************************************/
+
+.swiper-slide {
+  @include media-breakpoint-up(md) {
+    background-size: cover, 0 0;
+  }
+  @include media-breakpoint-down(sm) {
+    background-size: 0 0, cover;
+
+  }
+  background-position: center center, center bottom;
+  background-repeat: no-repeat;
+}

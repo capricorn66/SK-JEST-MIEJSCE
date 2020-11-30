@@ -1,0 +1,20 @@
+/* reboot
+*******************************************************************/
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Dosis', sans-serif;
+  color: $body-color;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+a {
+  color: $gray-600;
+  &:focus,
+  &:hover {
+    color: $gray-900;
+  }
+}
