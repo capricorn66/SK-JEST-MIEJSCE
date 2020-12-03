@@ -6,11 +6,12 @@
   box-shadow: none;
   z-index: 9;
   text-align: center;
-  line-height: 23px;
+  line-height: 24px;
   width: 30px;
   height: 30px;
-  @include transition(background-color .25s ease);
+  @include transition(all .25s ease);
   &:hover {
+    transform: scale(1.16, 1.16);
     background-color: $gray-600;
   }
   &::after {
